@@ -1,1 +1,63 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca de Dark Romance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #1a1a1a url('background.jpg') no-repeat center/cover; /* Baixe uma imagem de biblioteca escura */
+            color: #e0e0e0;
+            font-family: 'Crimson Text', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .library {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .book {
+            background: #333;
+            border: 2px solid #800000;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .book:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(128, 0, 0, 0.5);
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #800000;
+        }
+        .book h2 {
+            margin: 10px 0;
+            color: #ffcccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="library">
+        <div class="book" onclick="window.location.href='book1.html'">
+            <img src="capa1.jpg" alt="Capa do Livro 1"> <!-- Crie capas sombrias no Canva ou similar -->
+            <h2>Sombras Eternas</h2>
+            <p>Uma paixão proibida nas trevas.</p>
+        </div>
+        <!-- Adicione mais livros aqui -->
+        <div class="book" onclick="window.location.href='book2.html'">
+            <img src="capa2.jpg" alt="Capa do Livro 2">
+            <h2>Coração Envenenado</h2>
+            <p>Amor que corrói a alma.</p>
+        </div>
+    </div>
+</body>
+</html>
